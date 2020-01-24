@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dashboard Template</title>
+  <link rel="stylesheet" href="./styles/css/semantic.min.css">
+  <link rel="stylesheet" href="./styles/css/all.min.css">
+  <link rel="stylesheet" href="./styles/css/style.min.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- menu -->
+    <section class="menu">
+      <div class="logo">
+        <img src="./images/logo.png" alt="dashboard-logo">
+        <span>Dashboard</span>
+      </div>
+
+      <div class="list-menu">
+        <span>Menu links</span>
+        <ul>
+          <li class="li-active"><a href="/"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+          <li><a href="#"><i class="fab fa-app-store-ios"></i> Apps</a></li>
+          <li><a href="#"><i class="fas fa-layer-group"></i> Layouts</a></li>
+          <li><a href="#"><i class="fas fa-list-ul"></i> Widgets</a></li>
+          <li><a href="#"><i class="fas fa-tachometer-alt"></i> Performance</a></li>
+        </ul>
+      </div>
+
+      <div class="burger-menu">
+        <i class="fas fa-bars menu-open"></i>
+
+      </div>
+    </section>
+
+    <!-- main content -->
+    <main>
+      <!-- header -->
+      <header>
+        <div class="header-left">
+
+          <span><i class="fas fa-plus"></i> New</span>
+        </div>
+
+        <div class="header-right">
+
+          <label for="search">
+            <input type="text" placeholder="Search projects..." id="search">
+            <i class="fas fa-search"></i>
+          </label>
+
+          <i class="fas fa-arrows-alt-v"></i>
+
+          <div class="notification">
+            <i class="far fa-bell"></i>
+            <span>3</span>
+          </div>
+
+          <div class="user-profile">
+            <img src="./images/Mark-Zuckerberg1.jpg" alt="Mark Zuckerberg">
+            <span class="online"></span>
+          </div>
+
+        </div>
+      </header>
+      <!-- content -->
+      <section class="content">
+
+        <div class="content-wrap">
+
+          <div class="dashboard-header-info">
+            <div class="header-info-block">
+              <div class="info-inside">
+                <div class="info-icon">
+                  <i class="far fa-envelope"></i>
+                </div>
+                <div class="info-content">
+                  <div class="info-content-top">
+                    <span class="big-text">125</span>
+                    <span>emails</span>
+                  </div>
+                  <div class="info-content-bottom">
+                    <span>6 new arrivals</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-info-block">
+              <div class="info-inside">
+                <div class="info-icon">
+                  <i class="far fa-envelope"></i>
+                </div>
+                <div class="info-content">
+                  <div class="info-content-top">
+                    <span class="big-text">125</span>
+                    <span>emails</span>
+                  </div>
+                  <div class="info-content-bottom">
+                    <span>6 new arrivals</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-info-block">
+              <div class="info-inside">
+                <div class="info-icon">
+                  <i class="far fa-envelope"></i>
+                </div>
+                <div class="info-content">
+                  <div class="info-content-top">
+                    <span class="big-text">125</span>
+                    <span>emails</span>
+                  </div>
+                  <div class="info-content-bottom">
+                    <span>6 new arrivals</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ui stacked segment">
+          <div class="ui form">
+            <div class="three fields">
+              <div class="field">
+                <label>First name</label>
+                <input type="text" name="name" placeholder="First Name">
+              </div>
+
+              <div class="field">
+                <label>Last name</label>
+                <input type="text" name="lastname" placeholder="Last Name">
+              </div>
+
+              <div class="field">
+                <label>Birth Date</label>
+                <div class="ui calendar">
+                  <div class="ui input left icon">
+                    <i class="calendar icon"></i>
+                    <input type="text" placeholder="Pick up a date" name="date">
+                  </div>
+                </div>
+              </div>
+
+              <div class="field">
+                <label>Email</label>
+                <input type="text" name="email" placeholder="Middle Name">
+              </div>
+            </div>
+            <div class="ui form">
+              <div class="inline fields">
+                <label for="fruit">Select your job:</label>
+                <div class="field">
+                  <div class="ui radio checkbox checked">
+                    <input type="radio" name="developer" data-content="Front End Developer">
+                    <label>Front End Developer</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="ui radio checkbox">
+                    <input type="radio" name="developer" data-content="Back End Developer">
+                    <label>Back End Developer</label>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="ui radio checkbox">
+                    <input type="radio" name="developer" data-content="Full-Stack Developer">
+                    <label>Full-stack Developer</label>
+                  </div>
+                </div>
+              </div>
+              <div class="ui form">
+                <div class="inline field">
+                  <div class="ui toggle checkbox">
+                    <input type="checkbox" name="rules">
+                    <label>Agree with rules</label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="ui buttons" style="margin-top: 15px;">
+            <button class="ui negative button" id="cancel-btn">Cancel</button>
+            <div class="or"></div>
+            <button class="ui positive button" id="save-btn">Save</button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="./scripts/jquery-3.4.1.min.js"></script>
+  <script src="./scripts/semantic.min.js"></script>
+  <script src="./scripts/all.min.js"></script>
+  <script src="./scripts/main.js"></script>
+
+</body>
+
+</html>
